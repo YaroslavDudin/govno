@@ -111,51 +111,92 @@
     <script src="script.js"></script>     
       <div class = "schedule">
         <h2> Расписание Звонков</h2>
-        <style>
-            .containerfor {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-              grid-gap: 20px;
-              width: 100%;
-              
-              
-            }
-          
-            .grid {
-              background-color: #f2f2f2;
-              padding: 20px;
-              color: #333;
-              border-radius: 25px;
-              border-opacity : 0.1;
-              box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
-            }
-          
-            .grid p {
-              color: #000;
-            }
-          </style>
-          
+
           <div class="containerfor">
-            <div class="grid">
-              <p>1</p>
+            <div class="grid item1">
+            <h3>1 Пара 9:00-10:30</h3><h3>Перерыв 10:30-10:45</h3>
+            </div>
+            <div class="grid item2">
+              <h3>10:45-12:20 <br>12:20-12:50</h3>
+            </div>
+            <div class="grid item3">
+              <h3>12:50-14:25 <br>14:25-14:35</h3>
             </div>
             <div class="grid">
-              <p>2</p>
+              <h3>14:35-16:10 <br>16:10-16:20</h3>
             </div>
             <div class="grid">
-              <p>3</p>
+              <h3>16:20-17:55 <br>17:55-18:05</h3>
             </div>
             <div class="grid">
-              <p>4</p>
+              <h3>18:05-19:40 <br>dobi svoboden</h3>
             </div>
-            <div class="grid">
-              <p>5</p>
-            </div>
-            <div class="grid">
-              <p>6</p>
-            </div>
+            
           </div>
       </div>
-
+    
+    <!--
+    <style>
+      .containerfor {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-gap: 20px;
+        width: 100%;
+      }
+    
+      .wide-container {
+        grid-column: span 2;
+      }
+    
+      .containerfor > div {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+    
+    <div class="containerfor">
+      <div class="wide-container">
+        <p>Первый контейнер</p>
+      </div>
+      <div class="wide-container">
+        <p>Второй контейнер</p>
+      </div>
+      <div class="wide-container">
+        <p>Третий контейнер</p>
+      </div>
+      <div class="wide-container">
+        <p>Четвертый контейнер</p>
+      </div>
+      <div class="wide-container">
+        <p>Пятый контейнер</p>
+      </div>
+      <div class="wide-container">
+        <p>Шестой контейнер</p>
+      </div>
+      <div>
+        <p>Седьмой контейнер</p>
+      </div>
+      <div>
+        <p>Восьмой контейнер</p>
+      </div>
+      <div>
+        <p>Девятый контейнер</p>
+      </div>
+      <div>
+        <p>Десятый контейнер</p>
+      </div>
+      <div>
+        <p>Одиннадцатый контейнер</p>
+      </div>
+      <div>
+        <p>Двенадцатый контейнер</p>
+      </div>
+    </div>
+    -->
 </body> 
 </html>

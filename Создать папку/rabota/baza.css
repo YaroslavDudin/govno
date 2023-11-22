@@ -51,30 +51,6 @@ hr{
   border-top: 1px solid black;
 }
 
-table {
-  color: #fff;
-
-  background-color: #343a40;
-}
-
-td,
-th {
-  padding: 1em;
-}
-
-th {
-  text-align: left;
-  vertical-align: bottom;
-}
-
-tbody tr {
-  background-color: #2e3338;
-}
-.todo-name,
-th {
-    text-align: center; 
-    font-size: 20px;
-  }
 #grup-raspis{
   display: flex;    
   flex-grow:1;
@@ -92,7 +68,6 @@ th {
     background-color: rgba(163, 141, 141, 0.534) ;
     display: flex;
   }
-*/
   .menu {
     background-color: #00B5B5 ;
     padding: 10px;
@@ -139,3 +114,37 @@ th {
   .time {
     font-size: 30px;
   }
+  
+  .containerfor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    
+    
+  }
+
+  .grid {
+    background-color: #f2f2f2;
+    padding:20px ;
+    margin: auto;
+    color: #333;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.349);
+  }
+  .grid h3 h4 {
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  .grid p {
+    color: #000;
+    text-align: center; 
+    font-size: 20px;
+  }
+  .item1 {
+    text-align: center;
+  }
+  
+  
+  
