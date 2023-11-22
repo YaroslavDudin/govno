@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<div lang="ru">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info.timetable</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="hex.ico" 
+    type="image/x-icon">
+    <link rel="stylesheet" href="./baza.css">
+</head>
+<body>
+<header>
+            <img src="logo.jpg" alt="Hexlet" class = "hexlet-logo">
+                <div class="timeTable">
+                    <script> let today = new Date() 
+                        let dd = String(today.getDate()).padStart(2, '0');
+                        let mm = String(today.getMonth() + 1).padStart(2, '0');
+                        let yyyy = today.getFullYear();
+                        today = `${dd}/${mm}/${yyyy}`
+                        let a = document.write(today);</script>
+                </div>
+                <div class="weektext">
+                    <script>
+                        const getCurrentWeek = () => {
+                            let currentDate = new Date();
+                            let firstDay = new Date(currentDate.getFullYear(),0,1)
+                            let pastDay = (currentDate - firstDay ) / 86400000
+                            let currentWeekDay = Math.ceil((pastDay +firstDay.getDay()+1)/7)
+                            return currentWeekDay
+                        }
+                        const evenWeek = () => {
+                            let currentWeek = getCurrentWeek()
+                            return currentWeek % 2 === 0
+                        }
+                        let currentWeek = getCurrentWeek()
+                        let weekType = evenWeek()? '1': '2';
+                        
+                        document.write(`Неделя по счёту - № ${weekType}`)
+                        </script>
+                </div>
+               
+                    <script>
+                        const digitalClock = () => {
+                            var date = new Date();
+                            var hours = date.getHours();
+                            var minutes = date.getMinutes();
+                            var seconds = date.getSeconds();
+                            if (hours < 10) hours = "0" + hours;
+                            if (minutes < 10) minutes = "0" + minutes;
+                            if (seconds < 10) seconds = "0" + seconds;
+                            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+                            setTimeout("digitalClock()", 1000);
+                        }  
+                     </script>
+                <div id="clock"></div>
+                <script>digitalClock();</script>
+               
+                    </header>
+    <hr>  
+    <div class="container">
+        <nav class="menu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Авторы</a></li>
+              <li><a href="#">Игры Разума</a></li>
+            </ul>
+          </nav>
+            <h2>Расписание для групп</h2>
+    <div id="grup-raspis">
+        <div class="box">
+            <h1>Группа 1101о</h1>
+
+        </div>
+
+        <div class="box">
+            <h1>Группа 1102о</h1>
+
+
+       </div>
+
+        <div class="box">
+            <h1>Группа 1103о</h1>
+
+
+        </div>
+
+        <div class="box">
+            <h1>Группа 1104о</h1>
+
+
+        </div>
+
+        <div class="box">
+            <h1>Группа 1105о</h1>
+
+
+        </div>
+        <div class="box">
+            <h1>Группа 1106о</h1>
+            <hr>
+            <a href="1105.html"></a> 
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>     
+      <div class = "schedule">
+        <h2> Расписание Звонков</h2>
+        <style>
+            .containerfor {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+              grid-gap: 20px;
+              width: 100%;
+              
+              
+            }
+          
+            .grid {
+              background-color: #f2f2f2;
+              padding: 20px;
+              color: #333;
+              border-radius: 25px;
+              border-opacity : 0.1;
+              box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+            }
+          
+            .grid p {
+              color: #000;
+            }
+          </style>
+          
+          <div class="containerfor">
+            <div class="grid">
+              <p>1</p>
+            </div>
+            <div class="grid">
+              <p>2</p>
+            </div>
+            <div class="grid">
+              <p>3</p>
+            </div>
+            <div class="grid">
+              <p>4</p>
+            </div>
+            <div class="grid">
+              <p>5</p>
+            </div>
+            <div class="grid">
+              <p>6</p>
+            </div>
+          </div>
+      </div>
+
+</body> 
+</html>
