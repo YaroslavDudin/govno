@@ -52,39 +52,49 @@ display: inline;
 margin-left: 278px ;
 margin-bottom: 10px;
 }
-hr{
+.topSeparator{
   width: 70%;
+}
+.middleSeparator{
+margin-top: 70px;
+width:45%;
+margin-left: 0px;
+}
+
+hr{
   border: none;
   opacity: 0.2;
   height: 0px;
   border-top: 1px solid black;
 }
+
 h2 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #group-schedule{
   display: flex;
-  flex-direction: column; 
-  height: fit-content;
+  flex-direction: row; 
+  height: 270px;
+  margin-top: 15px;
 }
   button{
     border-radius: 10px;
     font-size:20px;
     border:none;
-    background-image:url(chlen.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 1s;
-    width: 300px;
-    height: 60px;
+    transition: 0.4s;
+    width: 150px;
+    height: 300px;
     margin-top: 10px;
+    margin-left: 15px;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
     -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
+    background-color: white;
+
   }
   button:hover{
-    width:665px ;
+    height:320px;
     }
 
   .menu {
@@ -149,18 +159,30 @@ backdrop-filter: blur(15px);
   box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
 }
 .container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns:120px 120px 120px;
+  grid-column-gap: 137px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 .schedule-item {
   width:200px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  height: 130px;
+padding: 20px;
+margin-right: 90px;
+transition: 0.4s;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2) inset;
 }
+ .schedule-item:hover {
+padding: 25px;
+ } 
 
 .schedule-item h3 {
   font-size: 24px;
