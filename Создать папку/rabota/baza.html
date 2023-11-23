@@ -1,8 +1,5 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<div lang="ru">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,190 +10,186 @@
     <link rel="stylesheet" href="./baza.css">
 </head>
 <body>
+  
 <header>
             <img src="logo.jpg" alt="Hexlet" class = "hexlet-logo">
+            <nav class="menu">
+              <ul>
+                <li><a href="#" >Главная</a></li>
+                <li><a href="#" class = "toptext">Авторы</a></li>
+                <li><a href="#" >Игры Разума</a></li>
+              </ul>
+            </nav>
+            <hr>  
                 <div class="timeTable">
-                    <script> let today = new Date() 
-                        let dd = String(today.getDate()).padStart(2, '0');
-                        let mm = String(today.getMonth() + 1).padStart(2, '0');
-                        let yyyy = today.getFullYear();
-                        today = `${dd}/${mm}/${yyyy}`
-                        let a = document.write(today);</script>
+                    <script src="/Создать папку/rabota/date.js"> 
+                   
+                    </script>
                 </div>
                 <div class="weektext">
-                    <script>
-                        const getCurrentWeek = () => {
-                            let currentDate = new Date();
-                            let firstDay = new Date(currentDate.getFullYear(),0,1)
-                            let pastDay = (currentDate - firstDay ) / 86400000
-                            let currentWeekDay = Math.ceil((pastDay +firstDay.getDay()+1)/7)
-                            return currentWeekDay
-                        }
-                        const evenWeek = () => {
-                            let currentWeek = getCurrentWeek()
-                            return currentWeek % 2 === 0
-                        }
-                        let currentWeek = getCurrentWeek()
-                        let weekType = evenWeek()? '1': '2';
-                        
-                        document.write(`Неделя по счёту - № ${weekType}`)
-                        </script>
+                    <script src="/Создать папку/rabota/week.js"></script>
                 </div>
                
-                    <script>
-                        const digitalClock = () => {
-                            var date = new Date();
-                            var hours = date.getHours();
-                            var minutes = date.getMinutes();
-                            var seconds = date.getSeconds();
-                            if (hours < 10) hours = "0" + hours;
-                            if (minutes < 10) minutes = "0" + minutes;
-                            if (seconds < 10) seconds = "0" + seconds;
-                            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
-                            setTimeout("digitalClock()", 1000);
-                        }  
-                     </script>
+                    <script src="/Создать папку/rabota/time.js"> </script>
                 <div id="clock"></div>
                 <script>digitalClock();</script>
                
                     </header>
-    <hr>  
-    <div class="container">
-        <nav class="menu">
-            <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Авторы</a></li>
-              <li><a href="#">Игры Разума</a></li>
-            </ul>
-          </nav>
             <h2>Расписание для групп</h2>
-    <div id="grup-raspis">
-        <div class="box">
-            <h1>Группа 1101о</h1>
-
-        </div>
-
-        <div class="box">
-            <h1>Группа 1102о</h1>
-
-
-       </div>
-
-        <div class="box">
-            <h1>Группа 1103о</h1>
-
-
-        </div>
-
-        <div class="box">
-            <h1>Группа 1104о</h1>
-
-
-        </div>
-
-        <div class="box">
-            <h1>Группа 1105о</h1>
-
-
-        </div>
-        <div class="box">
-            <h1>Группа 1106о</h1>
-            <hr>
-            <a href="1105.html"></a> 
-
-
-        </div>
-
+    <div id="group-schedule">
+<button id="myBtn1">Группа 1101</button>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <p>Расписание 1101</p>
+  </div>
+</div>
+<button id="myBtn2">Группа 1102</button>
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <p>Расписание 1102</p>
+  </div>
+</div>
+<button id="myBtn3">Группа 1103</button>
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <p>Расписание 1103/p>
+  </div>
+</div>
+<button id="myBtn4">Группа 1104</button>
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <p> Расписание 1104</p>
+  </div>
+</div>
+<button id="myBtn5">Группа 1105</button>
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <p style="text-align: center;"><strong><span style="font-size:13.999999999999998pt;">ЭВМ</span></strong></p>
+<p><strong><span style="font-size:11pt;">Четверг</span></strong></p>
+<p><strong><span style="font-size:11pt;">Неделя 2</span></strong></p>
+<p><span style="font-size:11pt;">9.00</span></p>
+<p><a href="https://zoom.us/j/93216648939?pwd=RVBjZ0ZpclRWN3dTbmtuOExUclUwZz09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/93216648939?pwd=RVBjZ0ZpclRWN3dTbmtuOExUclUwZz09</span></u></a></p>
+<p><strong><span style="font-size:11pt;">Пятница</span></strong></p>
+<p><strong><span style="font-size:11pt;">Неделя 1</span></strong></p>
+<p><span style="font-size:11pt;">9.00</span></p>
+<p><a href="https://zoom.us/j/92830331769?pwd=Qld5Wm1zN3FNM1JkY1djY3R6L3h3Zz09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/92830331769?pwd=Qld5Wm1zN3FNM1JkY1djY3R6L3h3Zz09</span></u></a></p>
+<p><strong><span style="font-size:11pt;">Еженедельно</span></strong></p>
+<p><span style="font-size:11pt;">10.45</span></p>
+<p><a href="https://zoom.us/j/93381700636?pwd=UFpMdlh5bmhmYjRwMUxYOG5lL2Jvdz09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/93381700636?pwd=UFpMdlh5bmhmYjRwMUxYOG5lL2Jvdz09</span></u></a></p>
+<h1 style="text-align: center;"><span style="font-size:13.999999999999998pt;">Иностранный язык</span></h1>
+<p><strong><span style="font-size:11pt;">Четверг</span></strong></p>
+<p><strong><span style="font-size:11pt;">Еженедельно</span></strong></p>
+<p><strong><span style="font-size:11pt;">10.45</span></strong></p>
+<p><span style="font-size:11pt;">Людмила Жернакова (Сильная Группа)</span></p>
+<p><a href="https://zoom.us/j/96319158511?pwd=UVZBRW00Q1p4SlJPdlF4dDlRUWo5QT09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/96319158511?pwd=UVZBRW00Q1p4SlJPdlF4dDlRUWo5QT09</span></u></a></p>
+<p><br></p>
+<p><span style="font-size:11pt;">Елена Шлыкова (Слабая Группа)</span></p>
+<p><a href="https://zoom.us/j/91719899201?pwd=TS90S203WTNxUXNCMm5FNXFvRmloQT09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/91719899201?pwd=TS90S203WTNxUXNCMm5FNXFvRmloQT09</span></u></a></p>
+<p style="text-align: center;"><strong><span style="font-size:13.999999999999998pt;">Основы Философии</span></strong></p>
+<p><strong><span style="font-size:11pt;">Среда</span></strong></p>
+<p><strong><span style="font-size:11pt;">Неделя 1</span></strong></p>
+<p><span style="font-size:11pt;">10.45</span></p>
+<p><a href="https://zoom.us/j/95967867540?pwd=VHdmZ0VvYk4raDBPMmc1MUxuVm4wdz09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/95967867540?pwd=VHdmZ0VvYk4raDBPMmc1MUxuVm4wdz09</span></u></a></p>
+<p><strong><span style="font-size:11pt;">Четверг</span></strong></p>
+<p><strong><span style="font-size:11pt;">Неделя 1</span></strong></p>
+<p><span style="font-size:11pt;">9.00</span></p>
+<p><a href="https://zoom.us/j/97051476668?pwd=RWp2eVQ0NG1yQXMvT1dYZnlpZS81dz09"target = "_blank"><u><span style="color:#1155cc;font-size:11pt;">https://zoom.us/j/97051476668?pwd=RWp2eVQ0NG1yQXMvT1dYZnlpZS81dz09</span></u></a></p>
+<p style="text-align: center;"><span style="font-size:13.999999999999998pt;"><strong>Прикладное Программирование</strong></span></p>
+<p><strong><span style="font-size:12pt;">Понедельник и Вторник</span></strong></p>
+<p><strong><span style="font-size:11pt;">Еженедельно</span></strong></p>
+<p><span style="color:#232333;background-color:#ffffff;font-size:11pt;">09.00</span></p>
+<p><a href="https://zoom.us/j/92359369423?pwd=MFVRODdVVzJzaEJXOTVEQjFoK0FzQT09"target = "_blank"><u><span style="color:#1155cc;background-color:#ffffff;font-size:11pt;">https://zoom.us/j/92359369423?pwd=MFVRODdVVzJzaEJXOTVEQjFoK0FzQT09</span></u></a></p>
+ </div>
+</div>
     </div>
     <script src="script.js"></script>     
       <div class = "schedule">
         <h2> Расписание Звонков</h2>
 
-          <div class="containerfor">
-            <div class="grid item1">
-            <h3>1 Пара 9:00-10:30</h3><h3>Перерыв 10:30-10:45</h3>
-            </div>
-            <div class="grid item2">
-              <h3>10:45-12:20 <br>12:20-12:50</h3>
-            </div>
-            <div class="grid item3">
-              <h3>12:50-14:25 <br>14:25-14:35</h3>
-            </div>
-            <div class="grid">
-              <h3>14:35-16:10 <br>16:10-16:20</h3>
-            </div>
-            <div class="grid">
-              <h3>16:20-17:55 <br>17:55-18:05</h3>
-            </div>
-            <div class="grid">
-              <h3>18:05-19:40 <br>dobi svoboden</h3>
-            </div>
-            
-          </div>
+       <!-- скрипт для кнопок -->
+      <script>
+  var modal1 = document.getElementById("modal1");
+  var btn1 = document.getElementById("myBtn1");
+  var span = document.getElementsByClassName("close")[0];
+  btn1.onclick = function() {
+    modal1.style.display = "block";
+  }
+  document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    modal1.style.display = "none";
+  }
+})
+var modal2 = document.getElementById("modal2");
+var btn2 = document.getElementById("myBtn2");
+var span = document.getElementsByClassName("close")[0];
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    modal2.style.display = "none";
+  }
+})
+var modal3 = document.getElementById("modal3");
+var btn3 = document.getElementById("myBtn3");
+var span = document.getElementsByClassName("close")[0];
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    modal3.style.display = "none";
+  }
+})
+var modal4 = document.getElementById("modal4");
+var btn4 = document.getElementById("myBtn4");
+var span = document.getElementsByClassName("close")[0];
+btn4.onclick = function() {
+  modal4.style.display = "block";
+}
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    modal4.style.display = "none";
+  }
+})
+var modal5 = document.getElementById("modal5");
+var btn5 = document.getElementById("myBtn5");
+var span = document.getElementsByClassName("close")[0];
+btn5.onclick = function() {
+  modal5.style.display = "block";
+}
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    modal5.style.display = "none";
+  }
+})
+      </script>
+   
+    <div class="container">
+      <div class="schedule-item">
+        <h3>Пара 1</h3>
+        <p>9:00 - 10:35</p>
       </div>
-    
-    <!--
-    <style>
-      .containerfor {
-        display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-gap: 20px;
-        width: 100%;
-      }
-    
-      .wide-container {
-        grid-column: span 2;
-      }
-    
-      .containerfor > div {
-        background-color: #f2f2f2;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        color: #333;
-      }
-    </style>
-    
-    <div class="containerfor">
-      <div class="wide-container">
-        <p>Первый контейнер</p>
+      <div class="schedule-item">
+        <h3>Пара 2</h3>
+        <p>10:45 - 12:20</p>
       </div>
-      <div class="wide-container">
-        <p>Второй контейнер</p>
+      <div class="schedule-item">
+        <h3>Пара 3</h3>
+        <p>12:50 - 14:25</p>
       </div>
-      <div class="wide-container">
-        <p>Третий контейнер</p>
+      <div class="schedule-item">
+        <h3>Пара 4</h3>
+        <p>14:35 - 16:10</p>
       </div>
-      <div class="wide-container">
-        <p>Четвертый контейнер</p>
+      <div class="schedule-item">
+        <h3>Пара 5</h3>
+        <p>16:20 - 17:55</p>
       </div>
-      <div class="wide-container">
-        <p>Пятый контейнер</p>
-      </div>
-      <div class="wide-container">
-        <p>Шестой контейнер</p>
-      </div>
-      <div>
-        <p>Седьмой контейнер</p>
-      </div>
-      <div>
-        <p>Восьмой контейнер</p>
-      </div>
-      <div>
-        <p>Девятый контейнер</p>
-      </div>
-      <div>
-        <p>Десятый контейнер</p>
-      </div>
-      <div>
-        <p>Одиннадцатый контейнер</p>
-      </div>
-      <div>
-        <p>Двенадцатый контейнер</p>
+      <div class="schedule-item">
+        <h3>Пара 6</h3>
+        <p>18:05 - 19:40</p>
       </div>
     </div>
-    -->
 </body> 
 </html>
