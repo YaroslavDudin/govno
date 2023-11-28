@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>info.timetable</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="hex.ico" 
+    <link rel="icon" href="/foto/hex.ico" 
     type="image/x-icon">
     <link rel="stylesheet" href="./baza.css">
 </head>
 <body>
   
 <header>
-            <img src="logo.jpg" alt="Hexlet" class = "hexlet-logo">
+  
+            <img src="/foto/logo.jpg" alt="Hexlet" class = "hexlet-logo">
             <nav class="menu">
               <ul>
-                <li><a href="#" >Главная</a></li>
-                <li><a href="#" class = "toptext">Авторы</a></li>
+                <li><a href="baza.html" >Главная</a></li>
+                <li><a href="Authors.html" class = "toptext">Авторы</a></li>
                 <li><a href="#" >Игры Разума</a></li>
               </ul>
             </nav>
             <hr class = "topSeparator">     <!--лох-->
                 <div class="timeTable">
-                    <script src="/Создать папку/rabota/date.js"> 
+                    <script src="/Создать папку/rabota/menu/date.js"> 
                    
                     </script>
                 </div>
                 <div class="weektext">
-                    <script src="/Создать папку/rabota/week.js"></script>
+                    <script src="/Создать папку/rabota/menu/week.js"></script>
                 </div>
                
-                    <script src="/Создать папку/rabota/time.js"> </script>
+                    <script src="/Создать папку/rabota/menu/time.js"> </script>
                 <div id="clock"></div>
                 <script>digitalClock();</script>
                
                     </header>
+                    <div class="side-1">
             <h2>Расписание</h2>
+
+
+
+ 
+
+
     <div id="group-schedule">
 <button id="myBtn1">Группа 1101</button>
 <div id="modal1" class="modal">
@@ -129,65 +136,12 @@
         <p>18:05 - 19:40</p>
       </div>
     </div>
+  </div>
     <script src="script.js"></script>     
-       <!-- скрипт для кнопок -->
-      <script>
-  var modal1 = document.getElementById("modal1");
-  var btn1 = document.getElementById("myBtn1");
-  var span = document.getElementsByClassName("close")[0];
-  btn1.onclick = function() {
-    modal1.style.display = "block";
-  }
-  document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    modal1.style.display = "none";
-  }
-})
-var modal2 = document.getElementById("modal2");
-var btn2 = document.getElementById("myBtn2");
-var span = document.getElementsByClassName("close")[0];
-btn2.onclick = function() {
-  modal2.style.display = "block";
-}
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    modal2.style.display = "none";
-  }
-})
-var modal3 = document.getElementById("modal3");
-var btn3 = document.getElementById("myBtn3");
-var span = document.getElementsByClassName("close")[0];
-btn3.onclick = function() {
-  modal3.style.display = "block";
-}
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    modal3.style.display = "none";
-  }
-})
-var modal4 = document.getElementById("modal4");
-var btn4 = document.getElementById("myBtn4");
-var span = document.getElementsByClassName("close")[0];
-btn4.onclick = function() {
-  modal4.style.display = "block";
-}
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    modal4.style.display = "none";
-  }
-})
-var modal5 = document.getElementById("modal5");
-var btn5 = document.getElementById("myBtn5");
-var span = document.getElementsByClassName("close")[0];
-btn5.onclick = function() {
-  modal5.style.display = "block";
-}
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    modal5.style.display = "none";
-  }
-})
-      </script>
-
+<div class="side-2">
+    <script src="./script.js" type="module"> </script>
+  <div id="game-board">
+  </div>
+</div>
 </body> 
 </html>
