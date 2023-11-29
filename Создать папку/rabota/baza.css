@@ -274,7 +274,7 @@ position: absolute;
 left: 0;
 margin-top: 100px;
 margin-left: 50px;
-animation: 1s ease-out 0s 1 slideInFromLeft;
+animation:slide1 5s;
 }
 
 .nik{
@@ -282,28 +282,27 @@ position: absolute;
 right: 0;
 margin-top: 100px;
 margin-right: 50px;
-animation: 5s ease-out 0s 1 slideInFromTop;
-
+animation:slide2 4s;
 }
 
 .platon{
 position: absolute;
 margin-left: 500px;
 margin-top: 100px;
-animation: 1s ease-out 0s 1 slideInFromBottom;
+animation:slide3 5s;
 }
 
 .luk{
   position: absolute;
   margin-left: 950px;
   margin-top: 100px;
-  animation: 1s ease-out 0s 1 slideInFromRight;
+  animation:slide4 7s;
 }
 
 .yarikpic{
   width: 400px;
   height: 400px;
-
+  border-radius: 20px;
 }
 .nikpic{
   width: 400px;
@@ -325,40 +324,60 @@ border-radius: 20px;
 .authorsheader{
   text-align: center;
   font-size: 60px;
+  animation: slide1 3s;
 }
 
-@keyframes slideInFromTop {
+@keyframes slide1 {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-200%) translateX(-200%) rotate(3600deg);
   }
-  100% {
-    transform: translateX(0);
-  }
-}
+  50%{
+transform: translateY(100%) translateX(100%) rotate(-3600deg);
+  }  
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-1000%);
-  }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-@keyframes slideInFromRight {
+@keyframes slide2 {
   0% {
-    transform: translateX(1000%);
+    transform: translateY(-750%);
+  }
+  25%{
+    transform: translateY(750%);
+  }
+  50%{
+    transform: translateY(-500%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-@keyframes slideInFromBottom {
+@keyframes slide3 {
   0% {
-    transform: translateY(1000%);
+    transform:translateY(-100%) translateX(-200%);
+  }
+  25%{
+    transform:translateY(-100%) translateX(50%) rotateZ(45deg);
   }
   100% {
-    transform: translateX(0);
   }
 }
+
+@keyframes slide4 {
+  0% {
+    transform: translateX(400%) rotateZ(180deg);
+  }
+  25%{
+  transform:translateX(0%) rotateZ(170deg);  
+  }
+  50%{
+    transform:translateX(-20%) rotateZ(-180deg);  
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+                         
